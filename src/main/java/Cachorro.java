@@ -6,17 +6,18 @@ public class Cachorro extends AnimalTerrestreAB{
     @Override
     public void comer() {
         super.comer();
+        this.comidaIngerida += 5;
     }
 
     @Override
     public void moverse() {
         super.moverse();
-        this.setCaminhoPercorrido(10);
+        this.caminhoPercorrido += 10;
     }
 
     @Override
     public void dormir() {
         super.dormir();
-        this.setHorasDormidas(10);
+        this.horasDormidas += 8;
     }
 }
